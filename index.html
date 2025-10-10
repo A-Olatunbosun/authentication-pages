@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authentication Pages</title>
+
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="left-container"></div>
+      <div class="right-container">
+        <div class="form-wrapper">
+          <div class="form-header">
+            <h1>Welcome back</h1>
+            <p>Enter your details to access your account</p>
+          </div>
+
+          <form class="form-container" action="">
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Enter your password"
+              />
+            </div>
+
+            <div class="forgot-password-container">
+              <div class="checkbox-group">
+                <input type="checkbox" name="remember" id="remember" />
+                <label for="remember">Remember me </label>
+              </div>
+
+              <a href="#">Forgot password</a>
+            </div>
+
+            <button type="submit" class="signin-btn">Login</button>
+
+            <div class="divider"><p>or continue with</p></div>
+
+            <button class="google-btn">
+              <span class="google-icon"
+                ><img src="./images/google-logo-icon.png" alt=""
+              /></span>
+              <span>Continue with Google</span>
+            </button>
+          </form>
+
+          <div class="form-footer">
+            <p>
+              Don't have an account?
+              <a href="./pages/signup.html" class="signup-page">Sign up</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
